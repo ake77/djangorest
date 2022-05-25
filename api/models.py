@@ -8,7 +8,9 @@ class Task(models.Model):
 
     class Meta:
         # override the default table name
-        db_table = 'task'
+        db_table = 'storetask'
+        verbose_name = 'งาน'
+        verbose_name_plural = 'ข้อมูลงาน'
 
         # Get list of Task by descending order
         # ordering = ['-data_created']
